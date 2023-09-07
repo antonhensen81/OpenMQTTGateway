@@ -194,7 +194,7 @@ extern void MQTTtoIR(char* topicOri, JsonObject& RFdata);
 #  ifdef ESP8266
 #    define IR_RECEIVER_GPIO 2 //D4 /replace by 4 with sonoff rf bridge
 #  elif ESP32
-#    define IR_RECEIVER_GPIO 26
+#    define IR_RECEIVER_GPIO 39
 #  elif __AVR_ATmega2560__
 #    define IR_RECEIVER_GPIO 2 // 2 = D2 on arduino mega
 #  else
@@ -206,7 +206,7 @@ extern void MQTTtoIR(char* topicOri, JsonObject& RFdata);
 #  ifdef ESP8266
 #    define IR_EMITTER_GPIO 16 //D0/ replace by 0 (D3) if you use IR LOLIN controller shield /replace by 5 with sonoff rf bridge
 #  elif ESP32
-#    define IR_EMITTER_GPIO 14
+#    define IR_EMITTER_GPIO 21
 #  elif __AVR_ATmega2560__
 #    define IR_EMITTER_GPIO 9
 #  else
